@@ -7,6 +7,6 @@ Catalog services in the context of e-commerce is a basic component that manages 
 
 ### DataBase: Postgresql in Ef Core
 
-### Message Broker: MaRabbitMQ
+### Message Broker: RabbitMQ
 
 ### Docker

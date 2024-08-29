@@ -5,7 +5,7 @@ Catalog services in the context of e-commerce is a basic component that manages 
 
 ### API implementation Type: minimal api by Asp.Net
 
-### DataBase: Postgresql in Ef Core
+### DataBase: Postgresql by Ef Core
 
 ### Message Broker: RabbitMQ
 

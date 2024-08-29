@@ -3,12 +3,12 @@ Catalog services in the context of e-commerce is a basic component that manages 
 
 ### Architectural Pattern: Vertical slice Architecture(VSA)
 
-### Api Type: minimal api by Asp.Net
+### API implementation Type: minimal api by Asp.Net
 
 ### DataBase: Postgresql in Ef Core
 
 ### Message Broker: RabbitMQ
 
-### RestFull APIs
+### API Standard: RestFull APIs
 
 ### Docker

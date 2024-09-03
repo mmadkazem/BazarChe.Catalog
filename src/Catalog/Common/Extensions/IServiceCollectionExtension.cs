@@ -12,7 +12,7 @@ public static class IServiceCollectionExtension
             cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(CatalogValidationBehavior<,>));
         });
         services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen();
+        services.AddCarter();
         services.AddExceptionHandlerMiddlewareServices();
         services.AddSwaggerConfig();
         return services;

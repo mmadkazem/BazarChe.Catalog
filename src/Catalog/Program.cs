@@ -13,6 +13,6 @@ var app = builder.Build();
     app.UseHttpsRedirection();
     app.UseRouting();
     app.UseExceptionHandler();
-    app.GetFullName();
+    app.MapCarter();
     app.Run();
 }

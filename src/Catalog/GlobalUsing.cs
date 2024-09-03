@@ -8,6 +8,7 @@ global using Microsoft.OpenApi.Models;
 global using FluentValidation.Results;
 global using FluentValidation;
 global using MediatR;
+global using Carter;
 
 
 

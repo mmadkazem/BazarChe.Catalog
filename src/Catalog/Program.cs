@@ -1,10 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
-var services = builder.Services;
-{
-    services.AddEndpointsApiExplorer();
-    services.AddSwaggerGen();
-}
+builder.Services.AddServiceCollection();
 
 var app = builder.Build();
 {
@@ -15,6 +11,8 @@ var app = builder.Build();
     }
 
     app.UseHttpsRedirection();
-
+    app.UseRouting();
+    app.UseExceptionHandler();
+    app.GetFullName();
     app.Run();
 }

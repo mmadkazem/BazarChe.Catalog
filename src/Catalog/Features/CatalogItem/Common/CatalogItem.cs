@@ -5,18 +5,17 @@ public class Item
     public const string TableName = "CatalogItems";
 
     public string Name { get; private set; } = null!;
-
     public string Description { get; private set; } = null!;
-
     public decimal Price { get; private set; }
-
     public int AvailableStock { get; private set; }
-
     public string Slug { get; private set; } = null!;
-
     public int MaxStockThreshold { get; private set; }
 
     public ICollection<Media> Medias { get; private set; } = [];
+    public Brand CatalogBrand { get; private set; } = null!;
+    public int BrandId { get; private set; }
+    public Category CatalogCategory { get; private set; } = null!;
+    public int CatalogCategoryId { get; private set; }
 
     public static Item Create(string name, string description, int maxStockThreshold, int brandId, int categoryId, decimal price = default)
     {
@@ -48,14 +47,6 @@ public class Item
 
         MaxStockThreshold = maxStockThreshold;
     }
-
-    public Brand CatalogBrand { get; private set; } = null!;
-
-    public int BrandId { get; private set; }
-
-    public Category CatalogCategory { get; private set; } = null!;
-
-    public int CatalogCategoryId { get; private set; }
 
     public int RemoveStock(int quantity)
     {

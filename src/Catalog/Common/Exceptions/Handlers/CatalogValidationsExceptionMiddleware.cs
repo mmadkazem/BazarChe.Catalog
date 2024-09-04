@@ -1,4 +1,4 @@
-namespace Catalog.Common.Exceptions;
+namespace Catalog.Common.Exceptions.Handlers;
 
 
 public sealed class CatalogValidationsExceptionMiddleware : IMiddleware

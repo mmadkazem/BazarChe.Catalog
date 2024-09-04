@@ -1,3 +1,5 @@
+using Catalog.Common.Exceptions.Handlers;
+
 namespace Catalog.Common.Extensions;
 
 
